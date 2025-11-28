@@ -2,7 +2,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![AWS](https://img.shields.io/badge/AWS-boto3-orange.svg)](https://aws.amazon.com/)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
 Automatically detect and eliminate unused AWS resources that are costing you money. Find stopped EC2 instances, unattached EBS volumes, idle RDS databases, and unused load balancers across all your AWS regions.
 
@@ -174,9 +174,29 @@ zombie-resource-hunter/
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## 📄 License
+## ⚠️ IMPORTANT SECURITY NOTICE
 
-MIT License - see LICENSE file for details
+This tool requires AWS credentials with read access to your infrastructure. 
+
+**DO NOT:**
+- Share your AWS credentials
+- Run untrusted code
+- Give this tool write permissions without reviewing the code
+
+**Before using:**
+- Review all code in `src/` directory
+- Use read-only IAM permissions
+- Test in a non-production account first
+
+## ⚠️ License Notice
+
+This project is licensed under **CC BY-NC-ND 4.0**. This means:
+- ✅ You can view and share this code
+- ✅ You must give credit if you reference it
+- ❌ You cannot use it for commercial purposes
+- ❌ You cannot create modified versions
+
+For portfolio review or educational purposes only.
 
 ## 🔗 Part of DevOps Portfolio
 
@@ -187,5 +207,3 @@ This is part of my DevOps automation portfolio. Check out my other projects:
 - 📝 Postmortem Generator (coming soon)
 
 ---
-
-**Built with ❤️ for cloud cost optimization**
